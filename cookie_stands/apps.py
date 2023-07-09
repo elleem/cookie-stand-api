@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class ThingsConfig(AppConfig):
+class CookieStandConfig(AppConfig):
     name = 'cookie_stands'
