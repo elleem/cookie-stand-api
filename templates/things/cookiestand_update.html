@@ -11,38 +11,38 @@
         <label for="id_location" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Location</label>
         <input type="text" name="location" id="id_location"
                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-               required value="{{ cookie_stand.location }}">
+               required value="{{ cookiestand.location }}">
 
       </div>
       <div>
-        <label for="id_sales" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hourly Sales</label>
-        <input type="number" name="sales" id="id_sales"
+        <label for="id_hourly_sales" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hourly Sales</label>
+        <input type="number" name="sales" id="id_hourly_sales"
                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-               value="{{ cookie_stand.hourly_sales }}" min="0" max="5" required>
+               value="{{ cookiestand.hourly_sales }}" min="0" max="5" required>
       </div>
          <div>
-        <label for="id_min" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Minimum Customers Per Hour</label>
-        <input type="number" name="min" id="id_min"
+        <label for="id_minimum_customers_per_hour" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Minimum Customers Per Hour</label>
+        <input type="number" name="min" id="id_minimum_customers_per_hour"
                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-               value="{{ cookie_stand.minimum_customers_per_hour }}" min="0" max="5" required>
+               value="{{ cookiestand.minimum_customers_per_hour }}" min="0" max="5" required>
       </div>
          <div>
-        <label for="id_max" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Maximum Customers Per Hour</label>
-        <input type="number" name="max" id="id_max"
+        <label for="id_maximum_customers_per_hour" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Maximum Customers Per Hour</label>
+        <input type="number" name="max" id="id_maximum_customers_per_hour"
                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-               value="{{ cookie_stand.maximum_customers_per_hour }}" min="0" max="5" required>
+               value="{{ cookiestand.maximum_customers_per_hour }}" min="0" max="5" required>
       </div>
          <div>
-        <label for="id_average" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Average Cookies Per Sale</label>
-        <input type="number" name="average" id="id_average"
+        <label for="id_average_cookie_per_sale" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Average Cookies Per Sale</label>
+        <input type="number" name="average" id="id_average_cookie_per_sale"
                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-               value="{{ cookie_stand.average_customer_per_sale }}" min="0" max="5" required>
+               value="{{ cookiestand.average_cookie_per_sale }}" min="0" max="5" required>
       </div>
       <div>
         <label for="id_owner" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Owner</label>
         <select name="owner" id="id_owner">
           {% for value, choice in form.fields.owner.choices %}
-            <option value="{{ value }}" {% if value == cookie_stand.owner.id %}selected{% endif %}>{{ choice }}</option>
+            <option value="{{ value }}" {% if value == cookiestand.owner.id %}selected{% endif %}>{{ choice }}</option>
           {% endfor %}
         </select>
       </div>
@@ -52,7 +52,7 @@
                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
         <textarea name="description" id="id_description"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                  placeholder="cookies" required>{{ cookie_stand.description }}</textarea>
+                  placeholder="cookies" required>{{ cookiestand.description }}</textarea>
       </div>
 
 
