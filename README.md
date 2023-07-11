@@ -1,3 +1,13 @@
+## Project: Putting it All Together: A Restful API with a user facing site
+
+Author: Lauren Main
+
+Version 1.0
+
+### Links and Resources
+
+Thank you to Code Fellows for the Quick Start API
+
 # api-quick-start
 
 Template Project for starting up CRUD API with Django Rest Framework
@@ -35,3 +45,20 @@ Template Project for starting up CRUD API with Django Rest Framework
 ## Database
 
 **NOTE:** If you are using Postgres instead of SQLite then make sure to install `psycopg2-binary` and include in `requirements.txt`
+
+### Set up environment -
+
+    python3.11 -m venv .venv
+    source .venv/bin/activate
+
+### Setup -
+
+    pip install -r requirements.txt
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py createsuperuser
+    python manage.py runserver
+
+### Login
+    username: admin1
+    password: 1234
