@@ -58,7 +58,3 @@ Template Project for starting up CRUD API with Django Rest Framework
     python manage.py migrate
     python manage.py createsuperuser
     python manage.py runserver
-
-### Login
-    username: admin1
-    password: 1234
