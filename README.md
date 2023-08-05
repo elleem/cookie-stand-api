@@ -25,6 +25,7 @@ Version 2.0 Feature Tasks
 - [x] updates models.py
 - [x] adds serializer in cooke_stands\views.py
 - [x] adds serializers.py in accounts
+- [x] updates readme with [preview link](https://cookie-stand-api-git-dev5-elleem.vercel.app/)
 - [x] updates readme with [deployed link](https://cookie-stand-api-omega.vercel.app/)
 
 # api-quick-start
