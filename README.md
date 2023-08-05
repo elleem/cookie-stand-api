@@ -12,19 +12,20 @@ Thank you to Code Fellows for the Quick Start API
 
 Version 1.0 Feature Tasks
 
--[x] install from requirements.txt
--[x] export requirements.txt
--[x] update template for cookie_stands
--[x] deploy with ElephantSQL and Vercel
+- [x] install from requirements.txt
+- [x] export requirements.txt
+- [x] update template for cookie_stands
+- [x] deploy with ElephantSQL and Vercel
 
 Version 2.0 Feature Tasks
 
--[x] if user not logged in `<CreateNewUser>` renders
--[x] users cannot see other users' entries
--[x] updates API end points to allow new user registration in project\urls.py
--[x] updates models.py
--[x] adds serializer in cooke_stands\views.py
--[x] adds serializers.py in accounts
+- [x] if user not logged in `<CreateNewUser>` renders
+- [x] users cannot see other users' entries
+- [x] updates API end points to allow new user registration in project\urls.py
+- [x] updates models.py
+- [x] adds serializer in cooke_stands\views.py
+- [x] adds serializers.py in accounts
+- [x] updates readme with [deployed link](https://cookie-stand-api-omega.vercel.app/)
 
 # api-quick-start
 
